@@ -1,0 +1,6 @@
+name: DeathLocation
+version: 1.0.2
+main: me.nate.deathlocation.DeathLocation
+api-version: 1.16
+authors: [ Gk01234 ]
+description: Shows location of death in the chat
