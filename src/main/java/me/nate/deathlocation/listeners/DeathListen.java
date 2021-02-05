@@ -20,9 +20,9 @@ public class DeathListen implements Listener {
         Player p = d.getEntity();
         Location deathLoc = p.getLocation();
         Server s = p.getServer();
-        String x = String.valueOf(deathLoc.getX());
-        String y = String.valueOf(deathLoc.getY());
-        String z = String.valueOf(deathLoc.getZ());
+        String x = String.valueOf(Math.round(deathLoc.getX()));
+        String y = String.valueOf(Math.round(deathLoc.getY()));
+        String z = String.valueOf(Math.round(deathLoc.getZ()));
         String ds = x+", "+y+", "+z ;
         String ps = String.valueOf(p.getPlayerListName());
         s.broadcastMessage(ps+" died at "+ds);
